@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+div {
+  height: 33.1vh;
+}
+
+input {
+  margin:auto;
+  display: block;
+  width: 70vw;
+  height: 100%;
+  font-family: Asap, sans-serif;
+  background-color: #000;
+  color: #ddd;
+  font-size: 5em;
+  text-align: center;
+  border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+p{
+	color: #ddd;
+	position: relative;
+	font-family: Asap, sans-serif;
+	font-size: 3em;
+	bottom: 150px;
+	margin-left: 70px;
+	width: 10px;
+}
