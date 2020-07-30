@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tip Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel = "stylesheet" href = "tipcalculator.css">
+	<script src = "tipcalculator.js"></script>
+
+  </head>
+   <body>
+	   <h1> Tip Calculator </h1>
+	   
+	   <div class = "inputs">
+	   		<span>Bill amount: </span><input id = "bill" type = "number" required placeholder = "$">
+	   </div>
+	   
+	   <br>
+	   
+	   <div class = "inputs">
+	   		<span>Percentage to tip:&nbsp;</span><label id = "label"> </label><input  id = "slider" type = "range" min = "0" max = "100" step = "1" value = "0">
+	   </div>
+	   
+	   <br>
+	   
+	   <div class = "inputs">
+	   		<span>Tip amount: </span><input type = "text" id = "tip" placeholder = "$" readonly>
+	   </div>
+	   
+	   <br>
+	   
+	   <div class = "inputs">
+	   		<span>Grand total </span><input type = "text" id = "total" placeholder = "$" readonly>
+	   </div>
+	   
+  </body>
+	
+</html>
