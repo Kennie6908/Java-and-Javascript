@@ -78,7 +78,13 @@ function newElement() {
   deleteitems();
 }
 
-
+function clearEverything() {
+	localStorage.clear();
+	var alllistitems = document.getElementsByTagName("li");
+	for (var i = 0; i < alllistitems.length; i++) {
+		alllistitems[i].style.display = "none";
+	}
+}
 
 
 
