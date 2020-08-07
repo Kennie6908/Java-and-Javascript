@@ -1,34 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono&display=swap');
 
 * {
-	text-align: center;
-	background-color: antiquewhite;
-	font-family: "Roboto Mono", "Indie Flower", sans-serif; 
-	font-size: 1.1em; 
+  text-align: center;
+  background-color: antiquewhite;
+  font-family: "Roboto Mono", "Indie Flower", sans-serif;
+  font-size: 1.1em;
 }
 
 ::placeholder {
-	text-align: left;
+  text-align: left;
 }
 
 input {
-	text-align: left; 
-	border: 1px solid; 
+  text-align: left;
+  border: 1px solid;
 }
 
 h1 {
-	font-size: 3em;
-	margin-bottom: 80px;
+  font-size: 3em;
+  margin-bottom: 80px;
 }
 
 .inputs {
-	margin: 10px;
+  margin: 10px;
 }
 
-input[type = range]{
-	width: 200px;
-	height: 110%; 
-	margin-left: 20px;
+input[type=range] {
+  width: 200px;
+  height: 110%;
+  margin-left: 20px;
 }
-
-

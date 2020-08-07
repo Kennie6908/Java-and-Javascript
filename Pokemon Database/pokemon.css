@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-
 * {
-	font-family: "Press Start 2P";
+  font-family: "Press Start 2P";
 }
 
 body {
@@ -63,4 +62,3 @@ h2 {
   width: 250px;
   margin-bottom: 20px;
 }
-

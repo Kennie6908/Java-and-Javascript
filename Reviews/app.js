@@ -1,3 +1,4 @@
+//Array of all reviews
 const reviews = [
   {
     id: 1,
@@ -37,16 +38,17 @@ const reviews = [
   },
 ];
 
+// create and assign variables
 const image = document.querySelector("#person-img");
 const author = document.querySelector("#author");
 const job = document.querySelector("#job");
 const info = document.querySelector("#info");
-
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
 let currentPerson = 0;
 
+// Write all review information in HTML
 document.addEventListener("DOMContentLoaded", () => {
   const selectedPerson = reviews[currentPerson];
   author.innerHTML = selectedPerson.name;
@@ -55,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   info.innerHTML = selectedPerson.text;
 });
 
+// function to update review information
 const showPerson = (currentPerson) => {
   const selectedPerson = reviews[currentPerson];
   author.innerHTML = selectedPerson.name;
@@ -63,6 +66,7 @@ const showPerson = (currentPerson) => {
   info.innerHTML = selectedPerson.text;
 };
 
+// next button event listener
 nextBtn.addEventListener("click", () => {
   currentPerson++;
   if (currentPerson >= reviews.length ) {
@@ -71,6 +75,7 @@ nextBtn.addEventListener("click", () => {
   showPerson(currentPerson);
 });
 
+//previous button event listener
 prevBtn.addEventListener("click", () => {
   currentPerson--;
   if (currentPerson < 0) {

@@ -15,7 +15,7 @@ div {
 }
 
 input {
-  margin:auto;
+  margin: auto;
   display: block;
   width: 70vw;
   height: 100%;
@@ -27,8 +27,8 @@ input {
   border: none;
 }
 
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
 
 input::-webkit-outer-spin-button,
@@ -37,12 +37,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-p{
-	color: #ddd;
-	position: relative;
-	font-family: Asap, sans-serif;
-	font-size: 3em;
-	bottom: 150px;
-	margin-left: 70px;
-	width: 10px;
+p {
+  color: #ddd;
+  position: relative;
+  font-family: Asap, sans-serif;
+  font-size: 3em;
+  bottom: 150px;
+  margin-left: 70px;
+  width: 10px;
 }

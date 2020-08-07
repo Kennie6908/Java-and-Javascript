@@ -1,55 +1,55 @@
 <!DOCTYPE HTML>
 <html>
-	
-	<head>
-		<title> Rock Paper Scissors </title>
-		<link rel = "stylesheet" href = "rockpaperscissors.css">
-		<script src = "rockpaperscissors.js"></script>
-	</head>
-	
-	<body>
-		<h1> Rock Paper Scissors </h1>
-		<p>Choose one to play! Get to 10 first!</p>
-		<div class = "humanchoice">
-			<img src = "rock.png" class = "images" id = "rockchoice" onclick = "humanrock()" />
-		</div>
-		<div class = "humanchoice">
-			<img src = "paper.png" class = "images" id = "paperchoice" onclick = "humanpaper()" />
-		</div>
-		<div class = "humanchoice">
-			<img src = "scissors.png" class = "images" id = "scissorschoice" onclick = "humanscissors()" />
-		</div>
-		
-		<div id = "computerchoicelabel">
-			<span>Computer played: </span><span id = "computerchoice"></span>
-		</div>
-		
-		<div class = "computerchoice">
-			<img src = "rock.png" class = "images" id = "computerrockchoice">
-		</div>
-		<div class = "computerchoice">
-			<img src = "paper.png" class = "images" id = "computerpaperchoice">
-		</div>
-		<div class = "computerchoice">
-			<img src = "scissors.png" class = "images" id = "computerscissorschoice">
-		</div>
-		
 
-		<div id = "resultbox">
-			<p id = "result"></p>
-		</div>
-		
-		<div id = "scorebox">
-			<span>The score is: </span><span id = "score"></span>
-		</div>
-		
-		<div id = "finalresultbox">
-			<span id = "finalresult"></span>
-		</div>
-		
-		<div id = "restartbutton">
-			<p id = "restart" onclick = "restart()"/><u>Restart</u></p>
-		</div>
-	</body>
+<head>
+	<title> Rock Paper Scissors </title>
+	<link rel="stylesheet" href="rockpaperscissors.css">
+	<script src="rockpaperscissors.js"></script>
+</head>
+
+<body>
+	<h1> Rock Paper Scissors </h1>
+	<p>Choose one to play! Get to 10 first!</p>
+	<div class="humanchoice">
+		<img src="rock.png" class="images" id="rockchoice" onclick="humanrock()" />
+	</div>
+	<div class="humanchoice">
+		<img src="paper.png" class="images" id="paperchoice" onclick="humanpaper()" />
+	</div>
+	<div class="humanchoice">
+		<img src="scissors.png" class="images" id="scissorschoice" onclick="humanscissors()" />
+	</div>
+
+	<div id="computerchoicelabel">
+		<span>Computer played: </span><span id="computerchoice"></span>
+	</div>
+
+	<div class="computerchoice">
+		<img src="rock.png" class="images" id="computerrockchoice">
+	</div>
+	<div class="computerchoice">
+		<img src="paper.png" class="images" id="computerpaperchoice">
+	</div>
+	<div class="computerchoice">
+		<img src="scissors.png" class="images" id="computerscissorschoice">
+	</div>
+
+
+	<div id="resultbox">
+		<p id="result"></p>
+	</div>
+
+	<div id="scorebox">
+		<span>The score is: </span><span id="score"></span>
+	</div>
+
+	<div id="finalresultbox">
+		<span id="finalresult"></span>
+	</div>
+
+	<div id="restartbutton">
+		<p id="restart" onclick="restart()" /><u>Restart</u></p>
+	</div>
+</body>
+
 </html>
-

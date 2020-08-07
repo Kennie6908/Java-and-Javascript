@@ -1,12 +1,12 @@
-//Decodes caesar cipher, which is just 13 letters over. 
-// Definitely a better way to do it than switch statements. 
-// I understand this is very inefficient and memory-consuming for long strings. Will improve in the future. 
+//Decodes caesar cipher, which is just 13 letters over.
+// Definitely a better way to do it than switch statements.
+// I understand this is very inefficient and memory-consuming for long strings. Will improve in the future.
 
 function rot13(str) {
   var array = str.split("");
   var returnedstring = "";
-  for (var i = 0; i < array.length; i++){
-    switch(array[i]){
+  for (var i = 0; i < array.length; i++) {
+    switch (array[i]) {
       case 'N':
         returnedstring += "A";
         break;
@@ -21,73 +21,73 @@ function rot13(str) {
         break;
       case 'R':
         returnedstring += "E";
-        break;  
+        break;
       case 'S':
         returnedstring += "F";
-        break;   
+        break;
       case 'T':
         returnedstring += "G";
-        break;   
+        break;
       case 'U':
         returnedstring += "H";
-        break;   
+        break;
       case 'V':
         returnedstring += "I";
-        break;   
+        break;
       case 'W':
         returnedstring += "J";
-        break;   
+        break;
       case 'X':
         returnedstring += "K";
-        break;     
+        break;
       case 'Y':
         returnedstring += "L";
-        break;   
+        break;
       case 'Z':
         returnedstring += "M";
-        break;   
+        break;
       case 'A':
         returnedstring += "N";
-        break;   
+        break;
       case 'B':
         returnedstring += "O";
-        break;   
+        break;
       case 'C':
         returnedstring += "P";
-        break;   
+        break;
       case 'D':
         returnedstring += "Q";
-        break;   
+        break;
       case 'E':
         returnedstring += "R";
-        break;   
+        break;
       case 'F':
         returnedstring += "S";
-        break;   
+        break;
       case 'G':
         returnedstring += "T";
-        break;   
+        break;
       case 'H':
         returnedstring += "U";
-        break;   
+        break;
       case 'I':
         returnedstring += "V";
-        break;   
+        break;
       case 'J':
         returnedstring += "W";
-        break;   
+        break;
       case 'K':
         returnedstring += "X";
-        break;   
+        break;
       case 'L':
         returnedstring += "Y";
-        break;   
+        break;
       case 'M':
         returnedstring += "Z";
-        break;   
-      default: 
+        break;
+      default:
         returnedstring += array[i];
-        break;            
+        break;
     }
   }
   return returnedstring;

@@ -17,7 +17,6 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -41,7 +40,6 @@ ul li.checked {
   color: #fff;
   text-decoration: line-through;
 }
-
 
 /* Style the close button */
 .close {

@@ -22,7 +22,7 @@ function convertToRoman(num) {
     return "L" + convertToRoman(num - 50);
   }
   if (num - 40 >= 0) {
-    return "XL" +convertToRoman(num - 40);
+    return "XL" + convertToRoman(num - 40);
   }
   if (num - 10 >= 0) {
     return "X" + convertToRoman(num - 10);
@@ -40,6 +40,6 @@ function convertToRoman(num) {
     return "I" + convertToRoman(num - 1);
   }
 
-return "";
+  return "";
 
 }

@@ -39,6 +39,9 @@ a {
   height: 10rem;
 }
 
+
+/* media query so if page is greater than 800px,
+hide the hamburger and display the links normally in the header */ 
 @media screen and (min-width: 800px) {
   .responsivewrapper {
     max-width: 1170px;
@@ -48,12 +51,13 @@ a {
     justify-content: space-between;
     padding: 1rem;
   }
+
   .hamburger {
     display: none;
   }
+
   .links {
     height: auto;
     display: flex;
   }
-
 }

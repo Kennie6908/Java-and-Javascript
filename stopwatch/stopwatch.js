@@ -1,7 +1,8 @@
-window.onload = function () {
-  
-  var seconds = 0; 
-  var milliseconds = 0; 
+window.onload = function() {
+
+  // create and assign variables
+  var seconds = 0;
+  var milliseconds = 0;
   var minutes = 0;
   var appendmilliseconds = document.getElementById("milliseconds");
   var appendSeconds = document.getElementById("seconds");
@@ -12,62 +13,60 @@ window.onload = function () {
   var interval;
 
   buttonStart.onclick = function() {
-    
-     clearInterval(interval);
-     interval = setInterval(startTimer, 10);
+    clearInterval(interval);
+    interval = setInterval(startTimer, 10);
   }
-  
-    buttonStop.onclick = function() {
-       clearInterval(interval);
-  }
-  
 
+  buttonStop.onclick = function() {
+    clearInterval(interval);
+  }
+
+  // reset timer function
   buttonReset.onclick = function() {
     clearInterval(interval);
     milliseconds = "00";
-	seconds = "00";
-	minutes = "00";
+    seconds = "00";
+    minutes = "00";
     appendmilliseconds.innerHTML = milliseconds;
-	appendSeconds.innerHTML = seconds;
-	appendMinutes.innerHTML = minutes;
+    appendSeconds.innerHTML = seconds;
+    appendMinutes.innerHTML = minutes;
   }
-  
-   
-  
-  function startTimer () {
-    milliseconds++; 
-    
-    if(milliseconds < 9){
+
+  // function to actually run the timer
+  function startTimer() {
+    milliseconds++;
+
+    if (milliseconds < 9) {
       appendmilliseconds.innerHTML = "0" + milliseconds;
     }
-    
-    if (milliseconds > 9){
-      appendmilliseconds.innerHTML = milliseconds;     
-    } 
-    
+
+    if (milliseconds > 9) {
+      appendmilliseconds.innerHTML = milliseconds;
+    }
+
     if (milliseconds == 99) {
       seconds++;
       appendSeconds.innerHTML = "0" + seconds;
       milliseconds = 0;
       appendmilliseconds.innerHTML = "0" + 0;
     }
-    
-    if (seconds > 9){
+
+    if (seconds > 9) {
       appendSeconds.innerHTML = seconds;
     }
-	
-	if (seconds == 59) {
+
+    if (seconds == 59) {
       minutes++;
       appendMinutes.innerHTML = "0" + minutes;
       seconds = 0;
       appendSeconds.innerHTML = "0" + 0;
     }
-	
-	if (minutes > 9){
-		appendMinutes.innerHTML = minutes;
-	}
-	
+
+    if (minutes > 9) {
+      appendMinutes.innerHTML = minutes;
+    }
+
   }
-  
+
 
 }
