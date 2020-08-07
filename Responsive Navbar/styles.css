@@ -1,0 +1,59 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+}
+
+.logo {
+  height: 40px;
+}
+
+.links a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+}
+
+.show-links {
+  height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+  .responsivewrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .hamburger {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+  }
+
+}
