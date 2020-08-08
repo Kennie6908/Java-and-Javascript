@@ -1,0 +1,2 @@
+Credits for John Smilga and freecodecamp for this project. This was made using their starter code, their images, and their tutorial at https://www.youtube.com/watch?v=3PHXvlpOkf4  . 
+For this project, I did not create any of the code myself, but I rewrote it and followed the tutorial to learn about filters, user interface design, and css flexbox/grid. 
